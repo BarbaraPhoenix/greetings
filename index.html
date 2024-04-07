@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings</title>
+</head>
+<body>
+
+    <div>
+        <h1>Письмо Санте</h1>
+        <p>Дорогой друг, не стесняйся и расскажи Санте о том, что ты хочешь получить на Рождество.</p>
+    </div>
+    <form method="get" id="contact-form">
+        <div>
+            <input type="login" placeholder="Логин" required>
+        </div>
+        <br>
+        <div>
+          <input type="password" placeholder="Пароль" required>
+        </div>
+        <br>
+        <div>
+            <input type="name" placeholder="Имя" required>
+        </div>
+        <br>
+     <p>Пол:</p>
+
+     <div class="item">
+        <div>
+    <input id= "boy" type="radio" name="person">
+    <label for="boy">Мальчик</label>
+        </div>
+        
+        <div>
+    <input id="girl" type="radio" name="person">
+    <label for="girl">Девочка</label>        
+        </div>
+    </div>
+    <br>
+    <div>
+        <label for="birth-date">Дата рождения:</label>
+        <input type="date" name="birth-date" id="birth-date">
+    </div>
+    <br>
+    <div>
+        <label for="">Выбрать город
+            <select name="city" form="city">
+                <option value="seattle">Seattle</option>
+                <option value="la">Los Angeles</option>
+                <option value="nyc">New York</option>
+            </select>
+        </label>
+  
+    </div>
+
+    <p>Выбери цвет новой игрушки:</p>
+    <div>
+        <input type="color" name="color" id="color-toy">
+        <label for="color-toy">Шапочка</label>
+    </div>
+    <div>
+        <input type="color" name="color" id="color-toy">
+        <label for="color-toy">Костюм</label>
+    </div>
+
+    <p>Ты был хорошим ребенком?</p>
+
+    <div class="item">
+        <div>
+    <input id= "ansver_1" type="radio" name="ansver">
+    <label for="ansver_1">Да</label>
+        </div>
+        
+        <div>
+    <input id="ansver_2" type="radio" name="ansver">
+    <label for="ansver_2">Нет</label>        
+        </div>
+    </div>
+    <br>
+    <div id="button">
+<button>Отправить письмо Санте</button>
+    </div>
+
+    </form>
+</body>
+</html>
